@@ -1,6 +1,7 @@
 torch
 numpy
 grad-cam
+streamlit
 matplotlib
 torchvision
 opencv-python
