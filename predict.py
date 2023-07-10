@@ -2,7 +2,7 @@ import cv2
 import torch
 import numpy as np
 from matplotlib import pyplot as plt
-import segmentation_models_pytorch as smp
+#import segmentation_models_pytorch as smp
 from pytorch_grad_cam.utils.image import show_cam_on_image
 from prep import preprocess_image, mask_img_to_mask, calculate_slice_bboxes, img_resize
 
@@ -19,7 +19,8 @@ def predict_mask(model, img):
     return pred_mask
 
 def load_model():
-    model = smp.DeepLabV3Plus(encoder_name='resnet50', classes=4, activation=None, encoder_weights=None, ).to(device)
+    #model = smp.DeepLabV3Plus(encoder_name='resnet50', classes=4, activation=None, encoder_weights=None, ).to(device)
+    model = torch.load('models/deeplab.pth', map_location=device)
     model.load_state_dict(torch.load('.\models\deeplabv3plus_dJ_par_resnet50_01.pth', map_location=device))
     model.eval()
 

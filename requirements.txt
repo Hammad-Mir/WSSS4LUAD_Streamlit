@@ -5,4 +5,4 @@ streamlit
 matplotlib
 torchvision
 opencv-python-headless
-segmentation_models_pytorch
+#segmentation_models_pytorch
