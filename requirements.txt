@@ -4,5 +4,5 @@ grad-cam
 streamlit
 matplotlib
 torchvision
-opencv-python
+opencv-python-headless
 segmentation_models_pytorch
