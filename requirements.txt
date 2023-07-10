@@ -1,0 +1,7 @@
+torch
+numpy
+matplotlib
+torchvision
+opencv-python
+pytorch-grad-cam
+segmentation_models_pytorch
